@@ -1,0 +1,22 @@
+<div class="wrapper">
+    <div class="logo"> <img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png" alt=" twitter-logo">
+    </div>
+    <div class="text-center mt-4 name"> Login </div>
+    <form class="p-3 mt-3" #LoginForm="ngForm" (ngSubmit)="userLogin()">
+        <div class="form-field d-flex flex-column align">
+            <input class="custom-field" type="text" name="userEmail" id="userEmail" placeholder="Enter your Email" [(ngModel)]="user.userEmail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" #email="ngModel" [class.is-invalid]="email.invalid && email.touched">
+            <div *ngIf="email.errors && (email.invalid && email.touched)">
+                <small class="text-danger" *ngIf="email.errors.required">Email Required</small>
+                <small class="text-danger" *ngIf="email.errors.pattern">Invalid Email</small>
+            </div>
+        </div>
+
+        <div class=" form-field d-flex flex-column">
+            <input class="custom-field" type="password" name="password " id="password" placeholder="Enter your password" [(ngModel)]="user.password" required #password="ngModel" [class.is-invalid]="password.invalid && password.touched">
+            <small class="invalid-feedback">Please enter password !!</small>
+        </div>
+        <div class="text-danger errorMessage">{{errorMessage}}</div>
+        <button class="btn mt-3" [disabled]="LoginForm.form.invalid">Login</button>
+    </form>
+    <div class="text-center fs-6 "> <a href="# ">Forget password?</a> or <a href="# ">Sign up</a> </div>
+</div>
