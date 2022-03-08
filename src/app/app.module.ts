@@ -9,6 +9,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
     RegisterComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ForgotPasswordComponent,
+    NotFoundComponent
    
   ],
   imports: [
