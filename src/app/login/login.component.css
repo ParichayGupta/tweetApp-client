@@ -82,6 +82,11 @@ body {
     letter-spacing: 1.3px
 }
 
+.wrapper .btn:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+
 .wrapper .btn:hover {
     background-color: #039BE5
 }
