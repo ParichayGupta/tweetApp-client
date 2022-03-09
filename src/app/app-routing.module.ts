@@ -23,15 +23,18 @@ const routes: Routes = [
     path: 'register',
     component: RegisterComponent
   },
-  
+
+  // LAZY LOADING A COMPONENT -> Means this will only be opened when it is demanded by the user.
+  {
+    path: 'home',
+    loadChildren: () =>
+      import('./modules/home/home.module').then((m) => m.HomeModule),
+  },
   {
     path: '**',
     component: NotFoundComponent
   }
 
-
-
- 
 ];
 
 @NgModule({
