@@ -1,1 +1,15 @@
 /* comment */
+
+nav a img {
+    display: inline;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+}
+
+nav a h2 {
+    position: relative;
+    display: inline;
+    color: #ecf0f3;
+    top: 15px;
+}
