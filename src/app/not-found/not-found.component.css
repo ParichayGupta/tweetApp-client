@@ -3,9 +3,6 @@
 /***********************************
 			/* 1. BODY */
 
-
-/***********************************/
-
 * {
     margin: 0;
     padding: 0;
@@ -30,13 +27,11 @@ label {
     cursor: pointer;
 }
 
-a {
-    margin: 0;
+.container-fluid {
     padding: 0;
-    vertical-align: baseline;
-    background: transparent;
-    text-decoration: none;
-    color: #000;
+    margin: 0;
+    background-color: #181828;
+    ;
 }
 
 input,
@@ -215,14 +210,8 @@ button {
 /* 1. END BODY */
 
 
-/***********************************/
-
-
 /***********************************
-			/* 2. CONTENT */
-
-
-/***********************************/
+	/* 2. CONTENT */
 
 
 /* 2.1. Section error */
@@ -235,7 +224,6 @@ button {
     width: 100%;
     height: 100%;
     text-align: center;
-    margin-top: 70px;
 }
 
 .error__overlay {
@@ -318,7 +306,7 @@ button {
     vertical-align: top;
     margin: 0 15px;
     border: 1px solid #181828;
-    color: #181828;
+    color: #FFF;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
