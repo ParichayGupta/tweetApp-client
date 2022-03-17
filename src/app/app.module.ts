@@ -10,6 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -19,6 +21,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     RegisterComponent,
     ForgotPasswordComponent,
     NotFoundComponent
+ 
 
   ],
   imports: [
@@ -26,7 +29,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

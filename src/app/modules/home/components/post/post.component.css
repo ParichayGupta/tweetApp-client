@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 * {
     margin: 0;
     padding: 0;
@@ -38,6 +39,20 @@
 
 .mid-section p {
     text-align: justify;
+}
+
+
+/* =======================================bottom-section==================================================== */
+
+.bi {
+    color: black;
+    font-size: 1.3rem;
+}
+
+.count_span {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: lighter;
 }
 
 @media(max-width: 380px) {

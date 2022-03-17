@@ -1,5 +1,6 @@
 /* comment */
 
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 nav a img {
     display: inline;
     width: 50px;
@@ -12,4 +13,9 @@ nav a h2 {
     display: inline;
     color: #ecf0f3;
     top: 15px;
+}
+
+.bi {
+    color: white;
+    font-size: 1.4rem;
 }

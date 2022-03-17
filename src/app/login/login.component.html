@@ -11,7 +11,7 @@
             </div>
         </div>
 
-        <div class=" form-field d-flex flex-column">
+        <div class="form-field d-flex flex-column">
             <input class="custom-field" type="password" name="password " id="password" placeholder="Enter your password" [(ngModel)]="user.password" required #password="ngModel" [class.is-invalid]="password.invalid && password.touched">
             <small class="invalid-feedback">Please enter password !!</small>
         </div>
