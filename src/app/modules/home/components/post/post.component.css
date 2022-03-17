@@ -36,6 +36,10 @@
 
 /* ===================================== mid Section ========================================================= */
 
+.mid-section p {
+    text-align: justify;
+}
+
 @media(max-width: 380px) {
     .container {
         margin: 30px 20px;
