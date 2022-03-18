@@ -9,16 +9,43 @@
 
 .container {
     max-width: 450px;
-    min-height: 200px;
+    min-height: fit-content;
     margin: 50px auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
     background-color: #ecf0f3;
     border-radius: 15px;
     box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff
 }
 
-.mid-section p {
-    text-align: justify;
+.container .create-post label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.container .create-post textarea {
+    padding: 10px 10px;
+    margin: 5px 5px 5px 0px;
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff
+}
+
+.btn {
+    box-shadow: none;
+    width: 20%;
+    height: 40px;
+    background-color: #03A9F4;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #b1b1b1, -3px -3px 3px #fff;
+    letter-spacing: 1.3px
+}
+
+.wrapper .btn:hover {
+    background-color: #039BE5
 }
 
 @media(max-width: 380px) {
