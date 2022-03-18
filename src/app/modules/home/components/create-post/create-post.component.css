@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+.container {
+    max-width: 450px;
+    min-height: 200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ecf0f3;
+    border-radius: 15px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff
+}
+
+.mid-section p {
+    text-align: justify;
+}
+
+@media(max-width: 380px) {
+    .container {
+        margin: 30px 20px;
+        padding: 40px 15px 15px 15px;
+    }
+}

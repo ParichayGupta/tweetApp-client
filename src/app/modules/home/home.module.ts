@@ -6,13 +6,15 @@ import { HomeDashboardComponent } from './components/home-dashboard/home-dashboa
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PostComponent } from './components/post/post.component';
+import { CreatePostComponent } from './components/create-post/create-post.component';
 
 @NgModule({
   declarations: [
     NavbarComponent,
     FooterComponent,
     HomeDashboardComponent,
-    PostComponent
+    PostComponent,
+    CreatePostComponent
   ],
   imports: [
     CommonModule,
