@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PostComponent } from './components/post/post.component';
 import { CreatePostComponent } from './components/create-post/create-post.component';
+import { UserComponent } from './components/user/user.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CreatePostComponent } from './components/create-post/create-post.compon
     FooterComponent,
     HomeDashboardComponent,
     PostComponent,
-    CreatePostComponent
+    CreatePostComponent,
+    UserComponent
   ],
   imports: [
     CommonModule,
