@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PostComponent } from './components/post/post.component';
 import { CreatePostComponent } from './components/create-post/create-post.component';
 import { UserComponent } from './components/user/user.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UserComponent } from './components/user/user.component';
     HomeDashboardComponent,
     PostComponent,
     CreatePostComponent,
-    UserComponent
+    UserComponent,
+    UserProfileComponent
   ],
   imports: [
     CommonModule,
