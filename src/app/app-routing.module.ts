@@ -6,34 +6,13 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: '/login',
-    pathMatch: 'full'
-  },
-  {
-    path: 'login',
-    component: LoginComponent
-  },
-  {
-    path: 'forgot-password',
-    component: ForgotPasswordComponent
-  },
-  {
-    path: 'register',
-    component: RegisterComponent
-  },
-
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
+  { path: 'register', component: RegisterComponent },
   // LAZY LOADING A COMPONENT -> Means this will only be opened when it is demanded by the user.
-  {
-    path: 'home',
-    loadChildren: () =>
-      import('./modules/home/home.module').then((m) => m.HomeModule),
-  },
-  {
-    path: '**',
-    component: NotFoundComponent
-  }
+  { path: 'home', loadChildren: () => import('./modules/home/home.module').then((m) => m.HomeModule) },
+  { path: '**', component: NotFoundComponent }
 
 ];
 

@@ -10,23 +10,11 @@ const routes: Routes = [
   {
     path: '',
     component: HomeDashboardComponent, children: [
-      {
-        path: 'all-post', component: PostComponent
-      },
-      {
-        path: 'create-post', component: CreatePostComponent
-      },
-      
-      {
-        path: 'users', component: UserComponent
-      },
-      {
-        path: 'user-profile', component:UserProfileComponent
-      },
-      {
-        path: '',redirectTo:'/home/all-post', pathMatch: 'full'
-      }
-    
+      { path: 'all-post', component: PostComponent },
+      { path: 'create-post', component: CreatePostComponent },
+      { path: 'users', component: UserComponent },
+      { path: 'user-profile', component: UserProfileComponent },
+      { path: '', redirectTo: '/home/all-post', pathMatch: 'full' }
     ]
   },
 ];

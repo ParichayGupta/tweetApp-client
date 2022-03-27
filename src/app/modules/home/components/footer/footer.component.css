@@ -1,1 +1,7 @@
 /* Comment */
+
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+.bi {
+    font-size: larger;
+    color: #ecf0f3;
+}

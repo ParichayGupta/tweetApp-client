@@ -3,19 +3,21 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 nav a img {
     display: inline;
-    width: 50px;
-    height: 50px;
-    margin: 0px 10px;
+    width: 30px;
+    height: 30px;
+    margin: 0px;
 }
 
-nav a h2 {
-    position: relative;
-    display: inline;
-    color: #ecf0f3;
-    top: 15px;
+.nav-link:hover {
+    letter-spacing: 2px;
 }
 
-.bi {
-    color: white;
-    font-size: 1.4rem;
+.container a {
+    text-decoration: none;
+}
+
+.container a small:hover {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #039BE5 !important;
 }
